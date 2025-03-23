@@ -7,10 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "homepage": "https://Tomi-dev9.github.io/PBO"
+    "homepage": "https://Tomi-dev9.github.io/PBO",
+    "predeploy": "npm run build && npm run export",
+    "deploy": "gh-pages -d out",
+    "export": "next export",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
-    "next": "15.2.3",
+    "next": "^15.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -27,15 +31,5 @@
     "postcss": "^8.5.3",
     "tailwindcss": "^4.0.15",
     "typescript": "^5"
-  },
-  "scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject"
+  }
 }
-
-}
-
